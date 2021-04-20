@@ -1,0 +1,27 @@
+<div class="col-md-8 offset-md-3">
+    <h3>Cadastro de Novo Empregado</h3>
+    <form (ngSubmit) = "onSubmit()">
+
+        <div class="mb-3">
+            <label class="mb-3">Nome</label>
+            <input id="nome" type="text" class="form-control" name="nome"
+                [(ngModel)] = "empregado.nome">
+        </div>
+
+        <div class="mb-3">
+            <label class="mb-3">Sobrenome</label>
+            <input id="sobrenome" type="text" class="form-control" name="sobrenome"
+                [(ngModel)] = "empregado.sobrenome">
+        </div>
+
+        <div class="mb-3">
+            <label class="mb-3">E-mail</label>
+            <input id="email" type="text" class="form-control" name="email"
+                [(ngModel)] = "empregado.email">
+        </div>
+
+        <button type="submit" class="btn btn-primary me-2">Salvar</button>
+        <button type="button" class="btn btn-secondary" [routerLink]="['']">Cancelar</button>
+
+    </form>
+</div>
